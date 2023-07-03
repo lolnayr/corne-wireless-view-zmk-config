@@ -29,10 +29,10 @@
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |     |   |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |
-            // | BTCLR|  5  |  6  |  7  |  8  |     |   | LFT | DWN |  UP | RGT |     |     |
+            // |  TAB |  1  |  2  |  3  |  4  |     |   |BTCLR| BT0 | BT1 | BT2 | BT3 | BT4 |
+            // | BTCLR|  5  |  6  |  7  |  8  |     |   |     | LFT | DWN |  UP | RGT |ENTR |
             // | SHFT |     |     |  9  |  0  |     |   |     |     |     |     |     |     |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            //                    | GUI |     | BKSP|   | SPC |     | ALT |
 
             bindings = <
        &kp TAB        &kp N1        &kp N2        &kp N3        &kp N4         &trans    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
@@ -44,10 +44,10 @@
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  {  |  }  |  `   |
+            // | CTRL | UND | RED | CPY | PST |     |   |  -  |  =  |  (  |  )  |  \  |ENTR |
+            // | SHFT |     |     |     |     |     |   |  _  |  +  |  [  |  ]  | "|" |  ~   |
+            //                    | GUI |     | BKSP|   | SPC |     | ALT |
 
             bindings = <
        &kp TAB    &kp EXCL      &kp AT    &kp HASH     &kp DLLR      &kp PRCNT    &kp CARET   &kp AMPS       &kp KP_MULTIPLY         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
